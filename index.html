@@ -3,18 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>gourmetech</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
 <header>
-    <nav><ul>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul></nav>
+    <div class="logo">
+    <a href="index.html" ><img src="./assets/image/logo-Gourmet.png" alt="logo" width="100" ></a>
+    <h1>GourmeTech</h1>
+    </div>
+    <nav>
+        <div id="mySidenav" class="sidenav">
+        <button id="closeBtn" class="close">×</button>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="ajouter-recette.html">Ajouter une recette</a></li>
+            <li><a href="favoris.html">Mes favoris</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+        </ul>
+    </div>
+
+        <button  id="openBtn">
+  <span class="burger-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </span>
+        </button>
+    </nav>
+    <svg data-id="" xmlns="http://www.w3.org/2000/svg" width="16" height="16"  class="bi bi-moon-fill" >
+        <use xlink:href="./assets/icons/moon-fill.svg"></use>
+    </svg>
 </header>
 <main>
+<section>
+    <input type="text" placeholder="Recherche une recette...">
+    <button type="submit">Rechercher</button>
+</section>
 
+    <section>
+        <fieldset>
+            <h2>Catégorie</h2>
+            <label><input type="checkbox">Entrée</label>
+            <label><input type="checkbox">Plat</label>
+            <label><input type="checkbox">Dessert</label>
+        </fieldset>
+
+        <fieldset>
+            <h2>Temps de préparation</h2>
+            <label><input type="checkbox">Rapide (>30min)</label>
+            <label><input type="checkbox">Moyen (30-60min)</label>
+            <label><input type="checkbox">long (>60min)</label>
+        </fieldset>
+
+        <fieldset>
+            <h2>Difficulté</h2>
+            <label><input type="checkbox">Facile</label>
+            <label><input type="checkbox">Moyen</label>
+            <label><input type="checkbox">Difficile</label>
+        </fieldset>
+    </section>
+
+    <section class="recette">
+
+        <article>
+            <img src="assets/image/blanquette-de-poulet.webp" alt="blanquette de poulet">
+            <button class="like-button" onclick="toggleLike(this)">❤</button>
+            <h2>blanquette de poulet</h2>
+            <div class="tags">
+            <p class="jaune">Plat</p>
+            <p class="vert">30 min</p>
+            <p class="bleu">Facile</p>
+            </div>
+            <a href="#" class="button">Voir la recette</a>
+        </article>
+
+        <article>
+            <img src="assets/image/Osso-buco.webp" alt="Osso-buco">
+            <button class="like-button" onclick="toggleLike(this)">❤</button>
+            <h2>Osso-bucco</h2>
+            <div class="tags">
+            <p class="jaune">Plat</p>
+            <p class="vert">105 min</p>
+            <p class="bleu">moyen</p>
+            </div>
+            <a href="#" class="button">Voir la recette</a>
+        </article>
+
+        <article>
+            <img src="assets/image/Tiramisu.webp" alt="Tiramisu">
+            <button class="like-button" onclick="toggleLike(this)">❤</button>
+            <h2>Tiramisu</h2>
+            <div class="tags">
+            <p class="jaune">Déssert</p>
+            <p class="vert">25 min</p>
+            <p class="bleu">Facile</p>
+            </div>
+            <a href="#" class="button">Voir la recette</a>
+        </article>
+
+        <article>
+            <img src="assets/image/Joue-de-boeuf-au-cidre-et-aux-pommes.webp" alt="Joue de boeuf">
+            <button class="like-button" onclick="toggleLike(this)">❤</button>
+            <h2>joue de boeuf</h2>
+            <div class="tags">
+            <p class="jaune">plat</p>
+            <p class="vert">60 min</p>
+            <p class="bleu">Difficile</p>
+            </div>
+            <a href="#" class="button">Voir la recette </a>
+        </article>
+    </section>
 </main>
+
+<footer>
+    <section class="nav">
+
+        <h2>Navigation</h2>
+
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Ajouter une recette</a></li>
+            <li><a href="#">Mes favoris</a></li>
+            <li><a href="#">À propos</a></li>
+        </ul>
+    </section>
+
+    <section class="apropos">
+        <h2>À propos de GourmeTech</h2>
+        <p>GourmeTech est une plateforme de recette culinaires interactive développée dans le cadre d'un projet
+            pédagogique.</p>
+    </section>
+    <p>© 2025 GourmeTech - Tous droits réservés</p>
+</footer>
+
 </body>
 </html>

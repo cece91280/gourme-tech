@@ -1,0 +1,268 @@
+:root {
+    --primary-color: rgb(230, 127, 34);
+    --secondary-color: rgb(45, 204, 110);
+    --next-color: rgb(51, 151, 219);
+    font-size: 10px;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    max-width: 480px;
+}
+
+img{ width: 100%;}
+
+main {
+    padding: 20px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.burger-icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+}
+
+/* Side Navigation */
+.sidenav {
+    width: 200px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding: 20px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sidenav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidenav ul li {
+    margin: 15px 0;
+}
+
+.sidenav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.sidenav .close {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.logo {
+    img{
+        width: 50px;
+    }
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 1.6rem;
+    margin: 0;
+    color: var(--primary-color);
+}
+
+/* Barre de recherche */
+section:first-of-type {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+section:first-of-type input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    font-size: 1.4rem;
+}
+
+section:first-of-type button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 5px 5px 0;
+    font-size: 1.4rem;
+}
+
+/* Filtres */
+fieldset {
+    border: none;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+fieldset h2 {
+    font-size: 1.6rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+
+}
+
+fieldset label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+fieldset input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+ /*Recettes */
+
+
+.recette article {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+    position: relative;
+    h2{
+        margin-block:10px;
+        margin-inline: 10px;
+    }
+
+    .like-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 50px;
+        border-radius: 50px;
+        padding: 15px;
+        border: none;
+        font-size: 1.6rem;
+        color: #525252;
+        cursor: pointer;
+        z-index: 1;
+
+    }
+
+    .like-button.liked {
+        color: #e74c3c;
+
+    }
+}
+
+.recette article img {
+
+    display: inline-block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+
+}
+.recette .tags {
+    display: flex;
+    padding: 10px 0;
+}
+
+.recette .tags p {
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: white;
+    margin-inline: 10px;
+}
+
+.recette .tags .jaune {
+    background-color: var(--primary-color);
+}
+
+.recette .tags .vert {
+    background-color: var(--secondary-color);
+}
+
+.recette .tags .bleu {
+    background-color: var(--next-color);
+}
+
+.recette .button {
+    display: block;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.4rem;
+    width: 200px;
+    margin-inline: auto;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+.nav{
+
+    h2{font-size: 1.6rem;
+        color: var(--primary-color);}
+    ul li {
+        margin-bottom: 10px;
+        list-style: none;
+    }
+    ul li a {
+        text-decoration: none;
+        color: #333;
+        font-size: 1.4rem;
+    }
+}
+.apropos{
+    h2{font-size: 1.6rem;
+        color: var(--primary-color);}
+
+}
+footer section {
+    margin-bottom: 20px;
+}
+
+
+footer p {
+    font-size: 1.2rem;
+    color: #666;
+}
