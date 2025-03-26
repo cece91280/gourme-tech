@@ -3,22 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>GourmeTech</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/apropos.css">
+    <script src="js/apropos.js" defer></script>
 </head>
 <body>
 <header>
     <div class="logo">
         <a href="index.html" ><img src="./assets/image/logo-Gourmet.png" alt="logo" width="100" ></a>
         <h1>GourmeTech</h1>
+        <svg data-id="" xmlns="http://www.w3.org/2000/svg" fill="yellow" width="16" height="16"  class="bi bi-moon-fill" >
+            <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
+        </svg>
     </div>
     <nav>
         <div id="mySidenav" class="sidenav">
             <button id="closeBtn" class="close">×</button>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="#">Ajouter une recette</a></li>
-                <li><a href="#">Mes favoris</a></li>
-                <li><a href="#">À propos</a></li>
+                <li><a href="ajouter-recette.html">Ajouter une recette</a></li>
+                <li><a href="favoris.html">Mes favoris</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
             </ul>
         </div>
 
@@ -31,16 +37,39 @@
         </button></nav>
 </header>
 <main>
-    <section></section>
+    <section class="faq">
+        <h2>Questions Fréquents</h2>
+        <details>
+            <summary>Qu'est-ce que GoumeTech</summary>
+            <p>GoumeTech est une plateforme de recettes culinaires interactive développée dans un projet pédagogique
+                . Notre lission est de rendre la cuisine accessible et amusante pour tous.</p>
+        </details>
+        <details>
+            <summary>Comment puis-je ajouter une recette ?</summary>
+            <p>Pour ajouter une recette, il suffit de cliquer sur le bouton "Ajouter une recette" et de suivre
+                lesinstructions pour soumettre votre recette.</p>
+        </details>
+        <details>
+            <summary>Comment fonctionne le système de favoris ?</summary>
+            <p>Vous pouvez ajouter des recttes à vos favoris en cliquant sur le bouton "Ajouter aux favoris" sur la
+                page de la recette. vous pouvez ensuite accéder à vos recettes favorites depuis la section "Mes
+                favoris".</p>
+        </details>
+        <details>
+            <summary>Puis-je contribuer au projet ?</summary>
+            <p>Oui, nous accueillons volontiers les contributions. Vous pouvez nous contacter pour plus
+                d'informations sur la façon de participer.</p>
+        </details>
+    </section>
 </main>
 <footer>
     <section>
         <h2>Navigation</h2>
         <ul>
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Ajouter une recette</a></li>
-            <li><a href="#">Mes favoris</a></li>
-            <li><a href="#">À propos</a></li>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="ajouter-recette.html">Ajouter une recette</a></li>
+            <li><a href="favoris.html">Mes favoris</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
         </ul>
     </section>
 

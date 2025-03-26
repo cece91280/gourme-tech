@@ -5,10 +5,7 @@ root{
     font-size: 10px;
 }
 body{
-    font-family: "Montserrat Underline", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
+    font-family: "Montserrat", sans-serif;
 }
 header {
     background-color: #fff;
@@ -29,11 +26,14 @@ img{width: 100%
 }
 
 .logo h1 {
-    margin: 0;
+
     font-size: 2rem;
     color: #e67f22;
 }
-
+svg{
+    margin-inline: 10px;
+    transform: rotate(270deg);
+}
 nav {
     display: flex;
     align-items: center;
@@ -167,5 +167,5 @@ footer ul li {
 
 footer ul li a {
     text-decoration: none;
-    color: #e67f18;
+    color: black;
 }
