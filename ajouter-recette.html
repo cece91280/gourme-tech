@@ -10,7 +10,7 @@
 <body>
 <header>
     <div class="logo">
-        <a href="index.html" ><img src="./assets/image/logo-Gourmet-removebg-preview.png" alt="logo" width="100" ></a>
+        <a href="index.html" ><img src="./assets/image/logo-Gourmet-removebg-preview.png" alt="logo" ></a>
         <h1>GourmeTech</h1>
         <svg data-id="" xmlns="http://www.w3.org/2000/svg" fill="yellow" width="16" height="16"  class="bi bi-moon-fill" >
             <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
@@ -40,19 +40,19 @@
         <h2>Ajouter une recette</h2>
         <form action="/submit-recipe" method="post" enctype="multipart/form-data">
 
-            <label for="titre" id="titre">Titre de recette :</label>
+            <label for="titre" id="titres">Titre de recette :</label>
             <input type="text" id="titre" name="titre" required>
 
-            <label for="description" id="description">Description :</label>
+            <label for="description" id="descriptions">Description :</label>
             <textarea id="description" name="description" placeholder="Entrez une description" required></textarea>
 
-            <label for="ingredient" id="ingredient">Ingrédient :</label>
+            <label for="ingredient" id="ingredients">Ingrédient :</label>
             <textarea id="ingredient" name="ingredient" placeholder="Entrez les ingrédients" required></textarea>
 
-            <label for="instruction" id="instruction">Instruction :</label>
+            <label for="instruction" id="instructions">Instruction :</label>
             <textarea id="instruction" name="instruction" placeholder="Entrez les instructions" required></textarea>
 
-            <label for="image" id="image">Image de la recette</label>
+            <label for="image" id="images">Image de la recette</label>
             <input type="file" id="image" name="image" accept="image/*" >
 
             <button type="submit">Ajouter la recette</button>
