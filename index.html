@@ -11,9 +11,10 @@
 <body>
 <header>
     <div class="logo">
-    <a href="index.html" ><img src="./assets/image/logo-Gourmet.png" alt="logo" width="100" ></a>
+    <a href="index.html" ><img src="assets/image/logo-Gourmet-removebg-preview.png" alt="logo" width="100" ></a>
     <h1>GourmeTech</h1>
-        <svg data-id="" xmlns="http://www.w3.org/2000/svg" fill="yellow" width="16" height="16"  class="bi bi-moon-fill" >
+        <svg data-id="theme" xmlns="http://www.w3.org/2000/svg" fill="yellow" width="16" height="16"
+             class="bi bi-moon-fill" >
             <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
         </svg>
     </div>
@@ -44,27 +45,31 @@
     <button type="submit">Rechercher</button>
 </section>
 
-    <section>
+    <section class="type">
+        <div>
         <fieldset>
             <h2>Catégorie</h2>
             <label><input type="checkbox">Entrée</label>
             <label><input type="checkbox">Plat</label>
-            <label><input type="checkbox">Dessert</label>
+            <label><input type="checkbox">dessert</label>
         </fieldset>
-
+        </div>
+        <div>
         <fieldset>
             <h2>Temps de préparation</h2>
-            <label><input type="checkbox">Rapide (>30min)</label>
+            <label><input type="checkbox">Rapide (<30min)</label>
             <label><input type="checkbox">Moyen (30-60min)</label>
             <label><input type="checkbox">long (>60min)</label>
         </fieldset>
-
+        </div>
+        <div>
         <fieldset>
             <h2>Difficulté</h2>
             <label><input type="checkbox">Facile</label>
             <label><input type="checkbox">Moyen</label>
             <label><input type="checkbox">Difficile</label>
         </fieldset>
+        </div>
     </section>
 
     <section class="recette">
@@ -98,7 +103,7 @@
             <button class="like-button" onclick="toggleLike(this)">❤</button>
             <h2>Tiramisu</h2>
             <div class="tags">
-            <p class="jaune">Déssert</p>
+            <p class="jaune">dessert</p>
             <p class="vert">25 min</p>
             <p class="bleu">Facile</p>
             </div>
@@ -136,7 +141,9 @@
         <p>GourmeTech est une plateforme de recette culinaires interactive développée dans le cadre d'un projet
             pédagogique.</p>
     </section>
-    <p>© 2025 GourmeTech - Tous droits réservés</p>
+    <div>
+    <p class="droit">© 2025 GourmeTech - Tous droits réservés</p>
+    </div>
 </footer>
 
 </body>

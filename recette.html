@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/recette.css">
+    <script src="js/recette.js" defer></script>
 </head>
 <body>
 <header>
     <div class="logo">
-        <a href="index.html" ><img src="./assets/image/logo-Gourmet.png" alt="logo" width="100" ></a>
+        <a href="index.html" ><img src="assets/image/logo-Gourmet-removebg-preview.png" alt="logo" width="100" ></a>
         <h1>GourmeTech</h1>
+        <svg data-id="theme" xmlns="http://www.w3.org/2000/svg" fill="yellow" width="16" height="16"
+             class="bi bi-moon-fill" >
+            <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
+        </svg>
     </div>
     <nav>
         <div id="mySidenav" class="sidenav">
@@ -18,7 +25,7 @@
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="ajouter-recette.html">Ajouter une recette</a></li>
                 <li><a href="favoris.html">Mes favoris</a></li>
-                <li><a href="a-propos.htmindex.html">À propos</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
             </ul>
         </div>
 
@@ -31,16 +38,104 @@
         </button></nav>
 </header>
 <main>
-    <section></section>
+    <section class="recette-container">
+        <div>
+        <article class="recette-header">
+            <img src="assets/image/blanquette-de-poulet.webp" alt="blanquette de poulet" class="recette-img">
+            <h2>blanquette de poulet</h2>
+            <div class="tags">
+                <p class="jaune">Plat</p>
+                <p class="vert">30 min</p>
+                <p class="bleu">Facile</p>
+            </div>
+            <button class="like-button" onclick="toggleLike(this)">❤</button>
+        </article>
+        <details>
+            <summary>Voir plus</summary>
+        <article class="recette-details">
+            <h2>Ingrédients</h2>
+            <ul>
+                <li>800g de morceaux de poulet</li>
+                <li>2 carottes</li>
+                <li>Le vert d'un poireau</li>
+                <li>1 Branche de céleri</li>
+                <li>1 bouquet garni</li>
+                <li>10 grains de poivre noir</li>
+                <li>1 cuillère(s) à café de graines de coriandre</li>
+                <li>1 gousse d'ail</li>
+                <li>1 gros oignon pelé et piqué de 3 clous de girofe</li>
+                <li>1 cuillère(s) à soupe de gros sel</li>
+                <li>250 g de champignons de paris</li>
+                <li>10 oignons grelots</li>
+                <li>110 g de beurre</li>
+                <li>20 cl de crème fraiche</li>
+                <li>1 jaune d'oeuf</li>
+                <li>1/2 cuillère(s) à café de muscade</li>
+                <li>40 g de farine</li>
+                <li>quelques brins de coriandre fraîche</li>
+            </ul>
+
+            <h2>Préparation</h2>
+            <ol>
+                <li>Pelez et coupez les carottes en tronçons. Pelez et écrasez l’ail. Lavez les légumes. Dans une cocotte, placez les carottes, le vert de poireau, le céleri, le bouquet garni, les grains de poivre et les graines de coriandre, l’ail, l’oignon, le gros sel et enfin les morceaux de poulet. Couvrez d’eau à hauteur et placez sur feu vif pour amener à ébullition, écumez au fur et à mesure. Faites cuire 45 mn à frémissements.
+
+                </li>
+                <li>Pendant ce temps, coupez les pieds des champignons, puis brossez-les et coupez-les en quatre. Pelez les oignons grelots. Dans une sauteuse, laissez fondre 45 g de beurre et faites revenir à feu doux les champignons et les oignons pendant 5 mn, réservez dans un petit saladier.</li>
+                <li>Dans un bol, mélangez la crème avec le jaune d’œuf et la muscade.</li>
+                <li>Dans la même sauteuse, laissez fondre 65 g de beurre, puis ajoutez la farine, mélangez à l’aide d’un fouet, mouillez avec 1 l de jus de cuisson du poulet, en l’intégrant louche par louche. Pour finir, incorporez la crème.</li>
+                <li>Baissez le feu et ajoutez à la sauce les morceaux de poulet, les carottes, les champignons et les oignons grelots, poursuivez la cuisson 10 mn à feu doux. Salez et poivrez au moulin si nécessaire et parsemez de coriandre.</li>
+            </ol>
+        </article>
+        </details>
+        </div>
+        <div>
+        <article class="recette-header">
+            <img src="assets/image/Tiramisu.webp" alt="Tiramisu" class="recette-img">
+            <h2>Tiramisu</h2>
+            <div class="tags">
+                <p class="jaune">Déssert</p>
+                <p class="vert">25 min</p>
+                <p class="bleu">Facile</p>
+            </div>
+            <button class="like-button" onclick="toggleLike(this)">❤</button>
+        </article>
+        <details>
+            <summary>Voir plus</summary>
+        <article class="recette-details">
+            <h2>Ingrédients</h2>
+            <ul>
+                <li>1 boîte de 30 biscuits pour tiramisu</li>
+                <li>30 cl de crème fleurette</li>
+                <li>100g de sucre de canne complet </li>
+                <li>1 sachet de sucre vanillé</li>
+                <li>250 g de mascarpone</li>
+                <li>2 cuillère(s) à soupe de café soluble</li>
+                <li>1 cuillère(s) à soupe de rhum</li>
+                <li>Quelques cuillère(s) à soupe de cacao en poudre sans sucre ajouté</li>
+            </ul>
+
+            <h2>Préparation</h2>
+            <ol>
+                <li>Versez la crème fleurette, le sucre de canne et le sucre vanillé dans un saladier, puis montez le touten neige à l’aide d’un batteur. Ajoutez délicatement le mascarpone. Mélangez le tout à faible vitesse.</li>
+                <li>Déposez dans un bol d’eau tiède (environ 25 cl) le café et versez-y le rhum. Mélangez. Imbibez chaquebiscuit avec ce mélange, puis disposez-les un à un au fond du moule, pour former une première couche.</li>
+                <li>Ajoutez une couche de crème, une deuxième couche de biscuits imbibés, puis finissez par unedernière couche de crème. Saupoudrez de cacao en poudre (à l’aide d’un tamis).</li>
+                <li>Laissez reposer au frais pendant 4 h afin que les biscuits s’imprègnent des saveurs, puisdégustez !</li>
+
+            </ol>
+        </article>
+        </details>
+        </article>
+        </div>
+    </section>
 </main>
 <footer>
     <section>
         <h2>Navigation</h2>
         <ul>
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Ajouter une recette</a></li>
-            <li><a href="#">Mes favoris</a></li>
-            <li><a href="#">À propos</a></li>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="ajouter-recette.html">Ajouter une recette</a></li>
+            <li><a href="favoris.html">Mes favoris</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
         </ul>
     </section>
 
